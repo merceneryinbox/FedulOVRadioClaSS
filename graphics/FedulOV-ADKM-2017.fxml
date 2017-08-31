@@ -586,7 +586,7 @@
                               </Label>
                            </children>
                         </GridPane>
-                        <GridPane gridLinesVisible="true" layoutX="11.0" layoutY="503.0" prefHeight="55.0" prefWidth="336.0">
+                        <GridPane gridLinesVisible="true" layoutX="11.0" layoutY="503.0" prefHeight="155.0" prefWidth="336.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -594,13 +594,10 @@
                           <rowConstraints>
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Button fx:id="btnADKMTheMain" mnemonicParsing="false" prefHeight="29.0" prefWidth="177.0" text="Основное" GridPane.columnIndex="1">
-                                 <font>
-                                    <Font name="System Bold" size="13.0" />
-                                 </font>
-                              </Button>
                               <Label text="Загрузка задания">
                                  <font>
                                     <Font name="System Bold" size="13.0" />
@@ -611,6 +608,11 @@
                                     <Font name="System Bold" size="13.0" />
                                  </font>
                               </Label>
+                              <ToggleButton mnemonicParsing="false" prefHeight="45.0" prefWidth="168.0" text="ОСНОВНОЕ" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </ToggleButton>
                            </children>
                         </GridPane>
                         <GridPane gridLinesVisible="true" layoutX="355.0" layoutY="504.0" prefHeight="154.0" prefWidth="346.0">
@@ -871,23 +873,14 @@
                </children></AnchorPane>
       </content>
     </Tab>
-      <Tab fx:id="tb5Settings" closable="false" text="Настройки">
-         <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-               <children>
-                  <VBox layoutX="1086.0" prefHeight="879.0" prefWidth="204.0" />
-               </children>
-            </AnchorPane>
-         </content>
-      </Tab>
-      <Tab fx:id="tb1ADKM1" closable="false" text="АДКМ">
+      <Tab fx:id="tb1ADKM3" closable="false" text="АГКМ">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="885.0" prefWidth="1168.0">
                <children>
                   <VBox layoutX="1087.0" layoutY="2.0" prefHeight="879.0" prefWidth="204.0" />
                   <AnchorPane layoutX="4.0" layoutY="6.0" prefHeight="920.0" prefWidth="709.0">
                      <children>
-                        <GridPane fx:id="grdMainTask1" gridLinesVisible="true" layoutX="16.0" layoutY="14.0" maxHeight="175.0" maxWidth="682.0" minHeight="138.0" minWidth="409.0" pickOnBounds="false" prefHeight="138.0" prefWidth="682.0" AnchorPane.bottomAnchor="768.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="14.0">
+                        <GridPane fx:id="grdMainTask3" gridLinesVisible="true" layoutX="16.0" layoutY="14.0" maxHeight="175.0" maxWidth="682.0" minHeight="138.0" minWidth="409.0" pickOnBounds="false" prefHeight="138.0" prefWidth="682.0" AnchorPane.bottomAnchor="768.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="14.0">
                            <children>
                               <Label prefHeight="21.0" prefWidth="168.0" text=" Основное задание" textAlignment="CENTER" textFill="#9e3a3a" underline="true" GridPane.rowIndex="1">
                                  <font>
@@ -906,17 +899,17 @@
                               </Label>
                               <GridPane alignment="CENTER" gridLinesVisible="true" pickOnBounds="false" prefHeight="137.0" prefWidth="140.0" GridPane.rowIndex="2">
                                  <children>
-                                    <Button fx:id="btnADKMMainTskFreqPlus1" mnemonicParsing="false" prefHeight="44.0" prefWidth="142.0" text="+">
+                                    <Button fx:id="btnADKMMainTskFreqPlus3" mnemonicParsing="false" prefHeight="44.0" prefWidth="142.0" text="+">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="btnADKMMainTskFreqMinus1" mnemonicParsing="false" prefHeight="41.0" prefWidth="142.0" text="-" GridPane.rowIndex="2">
+                                    <Button fx:id="btnADKMMainTskFreqMinus3" mnemonicParsing="false" prefHeight="41.0" prefWidth="142.0" text="-" GridPane.rowIndex="2">
                                        <font>
                                           <Font size="13.0" />
                                        </font>
                                     </Button>
-                                    <TextField fx:id="txtFldMainTaskFreq1" alignment="CENTER" prefHeight="62.0" prefWidth="142.0" promptText="0" GridPane.rowIndex="1">
+                                    <TextField fx:id="txtFldMainTaskFreq3" alignment="CENTER" prefHeight="62.0" prefWidth="142.0" promptText="0" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="22.0" />
                                        </font>
@@ -936,17 +929,17 @@
                               </GridPane>
                               <GridPane alignment="CENTER" gridLinesVisible="true" pickOnBounds="false" prefHeight="137.0" prefWidth="140.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                  <children>
-                                    <Button fx:id="btnADKMMainTskSpeedPlus1" mnemonicParsing="false" prefHeight="58.0" prefWidth="156.0" text="+">
+                                    <Button fx:id="btnADKMMainTskSpeedPlus3" mnemonicParsing="false" prefHeight="58.0" prefWidth="156.0" text="+">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="btnADKMMainTskSpeedMinus1" mnemonicParsing="false" prefHeight="41.0" prefWidth="156.0" text="-" GridPane.rowIndex="2">
+                                    <Button fx:id="btnADKMMainTskSpeedMinus3" mnemonicParsing="false" prefHeight="41.0" prefWidth="156.0" text="-" GridPane.rowIndex="2">
                                        <font>
                                           <Font size="13.0" />
                                        </font>
                                     </Button>
-                                    <TextField fx:id="txtFldSpeed1" alignment="CENTER" prefHeight="44.0" prefWidth="149.0" promptText="0" GridPane.rowIndex="1">
+                                    <TextField fx:id="txtFldSpeed3" alignment="CENTER" prefHeight="44.0" prefWidth="149.0" promptText="0" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="22.0" />
                                        </font>
@@ -966,7 +959,7 @@
                               </GridPane>
                               <GridPane GridPane.columnIndex="4" GridPane.rowIndex="2">
                                  <children>
-                                    <MenuButton fx:id="mnBtnADKMLangChooser1" mnemonicParsing="false" prefHeight="67.0" prefWidth="145.0" text="Выбор языка">
+                                    <MenuButton fx:id="mnBtnADKMLangChooser3" mnemonicParsing="false" prefHeight="67.0" prefWidth="145.0" text="Выбор языка">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
@@ -975,7 +968,7 @@
                                           <MenuItem mnemonicParsing="false" text="Action 2" />
                                        </items>
                                     </MenuButton>
-                                    <Button fx:id="btnADKMStart1" mnemonicParsing="false" prefHeight="110.0" prefWidth="145.0" text="Пуск" GridPane.rowIndex="2">
+                                    <Button fx:id="btnADKMStart3" mnemonicParsing="false" prefHeight="110.0" prefWidth="145.0" text="Пуск" GridPane.rowIndex="2">
                                        <font>
                                           <Font name="System Bold" size="15.0" />
                                        </font>
@@ -992,22 +985,22 @@
                               </GridPane>
                               <GridPane GridPane.columnIndex="5" GridPane.rowIndex="2">
                                  <children>
-                                    <Button fx:id="btnADKMSettings1" mnemonicParsing="false" prefHeight="0.0" prefWidth="218.0" text="Настройки">
+                                    <Button fx:id="btnADKMSettings3" mnemonicParsing="false" prefHeight="0.0" prefWidth="218.0" text="Настройки">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="btnADKMAdditionTsksReduct1" mnemonicParsing="false" prefHeight="0.0" prefWidth="218.0" text="Редактор доп.заданий" GridPane.rowIndex="1">
+                                    <Button fx:id="btnADKMAdditionTsksReduct3" mnemonicParsing="false" prefHeight="0.0" prefWidth="218.0" text="Редактор доп.заданий" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="btnADKMSignsSlotsReduct1" mnemonicParsing="false" prefHeight="9.0" prefWidth="218.0" text="Редактор набора знаков" GridPane.rowIndex="2">
+                                    <Button fx:id="btnADKMSignsSlotsReduct3" mnemonicParsing="false" prefHeight="9.0" prefWidth="218.0" text="Редактор набора знаков" GridPane.rowIndex="2">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="btnADKMSoundOff1" mnemonicParsing="false" prefHeight="4.0" prefWidth="218.0" text="Выключение звука" GridPane.rowIndex="3">
+                                    <Button fx:id="btnADKMSoundOff3" mnemonicParsing="false" prefHeight="4.0" prefWidth="218.0" text="Выключение звука" GridPane.rowIndex="3">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
@@ -1040,27 +1033,27 @@
                         </GridPane>
                         <GridPane layoutX="15.0" layoutY="159.0" pickOnBounds="false" prefHeight="45.0" prefWidth="685.0" AnchorPane.bottomAnchor="716.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="159.0">
                            <children>
-                              <Label fx:id="lblADKMTaskTextF1" pickOnBounds="false" prefHeight="28.0" prefWidth="201.0" text="Текст задания" textAlignment="CENTER">
+                              <Label fx:id="lblADKMTaskTextF3" pickOnBounds="false" prefHeight="28.0" prefWidth="201.0" text="Текст задания" textAlignment="CENTER">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="lblADKMInputTaskTextf1" pickOnBounds="false" prefHeight="68.0" prefWidth="242.0" text="Ввод текста задания" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                              <Label fx:id="lblADKMInputTaskTextf3" pickOnBounds="false" prefHeight="68.0" prefWidth="242.0" text="Ввод текста задания" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                  <font>
                                     <Font size="19.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="lblADKMVVVTextF1" pickOnBounds="false" prefHeight="28.0" prefWidth="200.0" text="VVV=" textAlignment="CENTER" GridPane.rowIndex="1">
+                              <Label fx:id="lblADKMVVVTextF3" pickOnBounds="false" prefHeight="28.0" prefWidth="200.0" text="VVV=" textAlignment="CENTER" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="System Bold" size="19.0" />
                                  </font>
                               </Label>
-                              <ToggleButton fx:id="tglBtnADKMShowHideTask1" mnemonicParsing="false" prefHeight="12.0" prefWidth="193.0" text="Скрыть текст задания" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                              <ToggleButton fx:id="tglBtnADKMShowHideTask3" mnemonicParsing="false" prefHeight="12.0" prefWidth="193.0" text="Скрыть текст задания" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="System Bold" size="15.0" />
                                  </font>
                               </ToggleButton>
-                              <ToggleButton fx:id="tglBtnADKMShowHideAnswer1" mnemonicParsing="false" prefHeight="7.0" prefWidth="121.0" text="Скрыть ввод" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                              <ToggleButton fx:id="tglBtnADKMShowHideAnswer3" mnemonicParsing="false" prefHeight="7.0" prefWidth="121.0" text="Скрыть ввод" GridPane.columnIndex="3" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="System Bold" size="15.0" />
                                  </font>
@@ -1151,67 +1144,67 @@
                               <GridPane gridLinesVisible="true" prefHeight="300.0" prefWidth="294.0" GridPane.rowIndex="1">
                                  <children>
                                     <TextField fx:id="txtFldADKMMnTsk00" GridPane.rowIndex="2" />
-                                    <TextField fx:id="txtFldADKMMnTsk211" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <TextField fx:id="txtFldADKMMnTsk213" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk221" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                    <TextField fx:id="txtFldADKMMnTsk223" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk231" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                    <TextField fx:id="txtFldADKMMnTsk233" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="2">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk241" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                    <TextField fx:id="txtFldADKMMnTsk243" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="2">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk301" editable="false" GridPane.rowIndex="3">
+                                    <TextField fx:id="txtFldADKMMnTsk303" editable="false" GridPane.rowIndex="3">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk311" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                    <TextField fx:id="txtFldADKMMnTsk313" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk321" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                    <TextField fx:id="txtFldADKMMnTsk323" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk331" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                    <TextField fx:id="txtFldADKMMnTsk333" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk341" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                    <TextField fx:id="txtFldADKMMnTsk343" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="3">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk401" editable="false" GridPane.rowIndex="4">
+                                    <TextField fx:id="txtFldADKMMnTsk403" editable="false" GridPane.rowIndex="4">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk411" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                    <TextField fx:id="txtFldADKMMnTsk413" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk421" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                    <TextField fx:id="txtFldADKMMnTsk423" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="4">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk431" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                    <TextField fx:id="txtFldADKMMnTsk433" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="4">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
@@ -1221,182 +1214,182 @@
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk501" editable="false" GridPane.rowIndex="5">
+                                    <TextField fx:id="txtFldADKMMnTsk503" editable="false" GridPane.rowIndex="5">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk511" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                    <TextField fx:id="txtFldADKMMnTsk513" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="5">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk521" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                    <TextField fx:id="txtFldADKMMnTsk523" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="5">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk531" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                    <TextField fx:id="txtFldADKMMnTsk533" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="5">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk541" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                    <TextField fx:id="txtFldADKMMnTsk543" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="5">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk601" editable="false" GridPane.rowIndex="6">
+                                    <TextField fx:id="txtFldADKMMnTsk603" editable="false" GridPane.rowIndex="6">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk611" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                    <TextField fx:id="txtFldADKMMnTsk613" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="6">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk621" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                    <TextField fx:id="txtFldADKMMnTsk623" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="6">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk631" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                                    <TextField fx:id="txtFldADKMMnTsk633" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="6">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk641" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                                    <TextField fx:id="txtFldADKMMnTsk643" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="6">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk701" editable="false" GridPane.rowIndex="7">
+                                    <TextField fx:id="txtFldADKMMnTsk703" editable="false" GridPane.rowIndex="7">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk711" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                    <TextField fx:id="txtFldADKMMnTsk713" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="7">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk721" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                    <TextField fx:id="txtFldADKMMnTsk723" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="7">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk731" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                                    <TextField fx:id="txtFldADKMMnTsk733" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="7">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk741" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                                    <TextField fx:id="txtFldADKMMnTsk743" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="7">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk801" editable="false" GridPane.rowIndex="8">
+                                    <TextField fx:id="txtFldADKMMnTsk803" editable="false" GridPane.rowIndex="8">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk811" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                    <TextField fx:id="txtFldADKMMnTsk813" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="8">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk821" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                    <TextField fx:id="txtFldADKMMnTsk823" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="8">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk831" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                                    <TextField fx:id="txtFldADKMMnTsk833" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="8">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk841" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                                    <TextField fx:id="txtFldADKMMnTsk843" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="8">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk901" editable="false" GridPane.rowIndex="9">
+                                    <TextField fx:id="txtFldADKMMnTsk903" editable="false" GridPane.rowIndex="9">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk911" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                    <TextField fx:id="txtFldADKMMnTsk913" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="9">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk921" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                                    <TextField fx:id="txtFldADKMMnTsk923" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="9">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk931" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                                    <TextField fx:id="txtFldADKMMnTsk933" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="9">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk441" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="9">
+                                    <TextField fx:id="txtFldADKMMnTsk443" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="9">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk001" editable="false">
+                                    <TextField fx:id="txtFldADKMMnTsk003" editable="false">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk011" editable="false" GridPane.columnIndex="1">
+                                    <TextField fx:id="txtFldADKMMnTsk013" editable="false" GridPane.columnIndex="1">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk021" editable="false" GridPane.columnIndex="2">
+                                    <TextField fx:id="txtFldADKMMnTsk023" editable="false" GridPane.columnIndex="2">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk031" editable="false" GridPane.columnIndex="3">
+                                    <TextField fx:id="txtFldADKMMnTsk033" editable="false" GridPane.columnIndex="3">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk041" editable="false" GridPane.columnIndex="4">
+                                    <TextField fx:id="txtFldADKMMnTsk043" editable="false" GridPane.columnIndex="4">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk101" editable="false" GridPane.rowIndex="1">
+                                    <TextField fx:id="txtFldADKMMnTsk103" editable="false" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk111" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <TextField fx:id="txtFldADKMMnTsk113" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk121" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                    <TextField fx:id="txtFldADKMMnTsk123" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk131" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                    <TextField fx:id="txtFldADKMMnTsk133" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk141" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                    <TextField fx:id="txtFldADKMMnTsk143" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk201" editable="false" GridPane.rowIndex="2">
+                                    <TextField fx:id="txtFldADKMMnTsk203" editable="false" GridPane.rowIndex="2">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
@@ -1422,7 +1415,7 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                               </GridPane>
-                              <TextArea fx:id="txtAreaADKMInput1" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <TextArea fx:id="txtAreaADKMInput3" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                            </children>
                            <columnConstraints>
                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="337.0" minWidth="10.0" prefWidth="320.0" />
@@ -1436,17 +1429,17 @@
                         </GridPane>
                         <GridPane gridLinesVisible="true" layoutX="11.0" layoutY="472.0" prefHeight="30.0" prefWidth="689.0">
                            <children>
-                              <Button fx:id="btnADKMClearInput1" mnemonicParsing="false" prefHeight="31.0" prefWidth="106.0" text="Очистить" GridPane.columnIndex="1">
+                              <Button fx:id="btnADKMClearInput3" mnemonicParsing="false" prefHeight="31.0" prefWidth="106.0" text="Очистить" GridPane.columnIndex="1">
                                  <font>
                                     <Font name="System Bold" size="15.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="btnADKMTestInput1" mnemonicParsing="false" prefHeight="31.0" prefWidth="122.0" text="Проверить" GridPane.columnIndex="2">
+                              <Button fx:id="btnADKMTestInput3" mnemonicParsing="false" prefHeight="31.0" prefWidth="122.0" text="Проверить" GridPane.columnIndex="2">
                                  <font>
                                     <Font name="System Bold" size="15.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="btnADKMReductInput1" mnemonicParsing="false" prefHeight="31.0" prefWidth="146.0" text="Редактировать" GridPane.columnIndex="3">
+                              <Button fx:id="btnADKMReductInput3" mnemonicParsing="false" prefHeight="31.0" prefWidth="146.0" text="Редактировать" GridPane.columnIndex="3">
                                  <font>
                                     <Font name="System Bold" size="15.0" />
                                  </font>
@@ -1469,7 +1462,7 @@
                         </GridPane>
                         <GridPane gridLinesVisible="true" layoutX="11.0" layoutY="503.0" prefHeight="55.0" prefWidth="336.0">
                            <children>
-                              <Button fx:id="btnADKMTheMain1" mnemonicParsing="false" prefHeight="29.0" prefWidth="177.0" text="Основное" GridPane.columnIndex="1">
+                              <Button fx:id="btnADKMTheMain3" mnemonicParsing="false" prefHeight="29.0" prefWidth="177.0" text="Основное" GridPane.columnIndex="1">
                                  <font>
                                     <Font name="System Bold" size="13.0" />
                                  </font>
@@ -1501,7 +1494,7 @@
                                     <Font name="System Bold" size="15.0" />
                                  </font>
                               </TextField>
-                              <TextArea fx:id="txtAreaADKMInputErrors1" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                              <TextArea fx:id="txtAreaADKMInputErrors3" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
                            </children>
                            <columnConstraints>
                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -1513,12 +1506,12 @@
                         </GridPane>
                         <GridPane gridLinesVisible="true" layoutX="353.0" layoutY="661.0" prefHeight="56.0" prefWidth="349.0">
                            <children>
-                              <Button fx:id="btnADKMTimeSigns1" mnemonicParsing="false" prefHeight="35.0" prefWidth="208.0" text="Время-знаки">
+                              <Button fx:id="btnADKMTimeSigns3" mnemonicParsing="false" prefHeight="35.0" prefWidth="208.0" text="Время-знаки">
                                  <font>
                                     <Font name="System Bold" size="13.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="btnADKMSignsCorrection1" mnemonicParsing="false" prefHeight="47.0" prefWidth="538.0" text="Корректировать знаки" GridPane.columnIndex="1">
+                              <Button fx:id="btnADKMSignsCorrection3" mnemonicParsing="false" prefHeight="47.0" prefWidth="538.0" text="Корректировать знаки" GridPane.columnIndex="1">
                                  <font>
                                     <Font name="System Bold" size="13.0" />
                                  </font>
@@ -1529,7 +1522,7 @@
                                     <Font name="System Bold" size="13.0" />
                                  </font>
                               </TextField>
-                              <MenuButton fx:id="mnBtnTskFormer1" mnemonicParsing="false" prefHeight="148.0" prefWidth="501.0" text="Знаки" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                              <MenuButton fx:id="mnBtnTskFormer3" mnemonicParsing="false" prefHeight="148.0" prefWidth="501.0" text="Знаки" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="System Bold" size="13.0" />
                                  </font>
@@ -1554,22 +1547,22 @@
                      <children>
                         <GridPane gridLinesVisible="true" layoutX="14.0" layoutY="35.0" prefHeight="120.0" prefWidth="606.0">
                            <children>
-                              <ToggleButton fx:id="btnADKMRightOnOff1" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ВКЛ.">
+                              <ToggleButton fx:id="btnADKMRightOnOff3" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ВКЛ.">
                                  <font>
                                     <Font size="13.0" />
                                  </font>
                               </ToggleButton>
-                              <ToggleButton fx:id="btnADKMRightTangent1" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ТАНГЕНТА" GridPane.rowIndex="1">
+                              <ToggleButton fx:id="btnADKMRightTangent3" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ТАНГЕНТА" GridPane.rowIndex="1">
                                  <font>
                                     <Font size="13.0" />
                                  </font>
                               </ToggleButton>
-                              <ToggleButton fx:id="btnADKMRightReciev1" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ПРИЕМ" GridPane.rowIndex="2">
+                              <ToggleButton fx:id="btnADKMRightReciev3" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ПРИЕМ" GridPane.rowIndex="2">
                                  <font>
                                     <Font size="13.0" />
                                  </font>
                               </ToggleButton>
-                              <ToggleButton fx:id="btnADKMRightCall1" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ВЫЗОВ" GridPane.rowIndex="3">
+                              <ToggleButton fx:id="btnADKMRightCall3" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ВЫЗОВ" GridPane.rowIndex="3">
                                  <font>
                                     <Font size="13.0" />
                                  </font>
@@ -1753,7 +1746,7 @@
             </AnchorPane>
          </content>
       </Tab>
-      <Tab fx:id="tb1ADKM2" closable="false" text="АДКМ">
+      <Tab fx:id="tb1ADKM2" closable="false" text="АДФК">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="885.0" prefWidth="1168.0">
                <children>
@@ -2626,14 +2619,14 @@
             </AnchorPane>
          </content>
       </Tab>
-      <Tab fx:id="tb1ADKM3" closable="false" text="АДКМ">
+      <Tab fx:id="tb1ADKM1" closable="false" text="Р.СЕТЬ">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="885.0" prefWidth="1168.0">
                <children>
                   <VBox layoutX="1087.0" layoutY="2.0" prefHeight="879.0" prefWidth="204.0" />
                   <AnchorPane layoutX="4.0" layoutY="6.0" prefHeight="920.0" prefWidth="709.0">
                      <children>
-                        <GridPane fx:id="grdMainTask3" gridLinesVisible="true" layoutX="16.0" layoutY="14.0" maxHeight="175.0" maxWidth="682.0" minHeight="138.0" minWidth="409.0" pickOnBounds="false" prefHeight="138.0" prefWidth="682.0" AnchorPane.bottomAnchor="768.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="14.0">
+                        <GridPane fx:id="grdMainTask1" gridLinesVisible="true" layoutX="16.0" layoutY="14.0" maxHeight="175.0" maxWidth="682.0" minHeight="138.0" minWidth="409.0" pickOnBounds="false" prefHeight="138.0" prefWidth="682.0" AnchorPane.bottomAnchor="768.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="14.0">
                            <children>
                               <Label prefHeight="21.0" prefWidth="168.0" text=" Основное задание" textAlignment="CENTER" textFill="#9e3a3a" underline="true" GridPane.rowIndex="1">
                                  <font>
@@ -2652,17 +2645,17 @@
                               </Label>
                               <GridPane alignment="CENTER" gridLinesVisible="true" pickOnBounds="false" prefHeight="137.0" prefWidth="140.0" GridPane.rowIndex="2">
                                  <children>
-                                    <Button fx:id="btnADKMMainTskFreqPlus3" mnemonicParsing="false" prefHeight="44.0" prefWidth="142.0" text="+">
+                                    <Button fx:id="btnADKMMainTskFreqPlus1" mnemonicParsing="false" prefHeight="44.0" prefWidth="142.0" text="+">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="btnADKMMainTskFreqMinus3" mnemonicParsing="false" prefHeight="41.0" prefWidth="142.0" text="-" GridPane.rowIndex="2">
+                                    <Button fx:id="btnADKMMainTskFreqMinus1" mnemonicParsing="false" prefHeight="41.0" prefWidth="142.0" text="-" GridPane.rowIndex="2">
                                        <font>
                                           <Font size="13.0" />
                                        </font>
                                     </Button>
-                                    <TextField fx:id="txtFldMainTaskFreq3" alignment="CENTER" prefHeight="62.0" prefWidth="142.0" promptText="0" GridPane.rowIndex="1">
+                                    <TextField fx:id="txtFldMainTaskFreq1" alignment="CENTER" prefHeight="62.0" prefWidth="142.0" promptText="0" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="22.0" />
                                        </font>
@@ -2682,17 +2675,17 @@
                               </GridPane>
                               <GridPane alignment="CENTER" gridLinesVisible="true" pickOnBounds="false" prefHeight="137.0" prefWidth="140.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                  <children>
-                                    <Button fx:id="btnADKMMainTskSpeedPlus3" mnemonicParsing="false" prefHeight="58.0" prefWidth="156.0" text="+">
+                                    <Button fx:id="btnADKMMainTskSpeedPlus1" mnemonicParsing="false" prefHeight="58.0" prefWidth="156.0" text="+">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="btnADKMMainTskSpeedMinus3" mnemonicParsing="false" prefHeight="41.0" prefWidth="156.0" text="-" GridPane.rowIndex="2">
+                                    <Button fx:id="btnADKMMainTskSpeedMinus1" mnemonicParsing="false" prefHeight="41.0" prefWidth="156.0" text="-" GridPane.rowIndex="2">
                                        <font>
                                           <Font size="13.0" />
                                        </font>
                                     </Button>
-                                    <TextField fx:id="txtFldSpeed3" alignment="CENTER" prefHeight="44.0" prefWidth="149.0" promptText="0" GridPane.rowIndex="1">
+                                    <TextField fx:id="txtFldSpeed1" alignment="CENTER" prefHeight="44.0" prefWidth="149.0" promptText="0" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="22.0" />
                                        </font>
@@ -2712,7 +2705,7 @@
                               </GridPane>
                               <GridPane GridPane.columnIndex="4" GridPane.rowIndex="2">
                                  <children>
-                                    <MenuButton fx:id="mnBtnADKMLangChooser3" mnemonicParsing="false" prefHeight="67.0" prefWidth="145.0" text="Выбор языка">
+                                    <MenuButton fx:id="mnBtnADKMLangChooser1" mnemonicParsing="false" prefHeight="67.0" prefWidth="145.0" text="Выбор языка">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
@@ -2721,7 +2714,7 @@
                                           <MenuItem mnemonicParsing="false" text="Action 2" />
                                        </items>
                                     </MenuButton>
-                                    <Button fx:id="btnADKMStart3" mnemonicParsing="false" prefHeight="110.0" prefWidth="145.0" text="Пуск" GridPane.rowIndex="2">
+                                    <Button fx:id="btnADKMStart1" mnemonicParsing="false" prefHeight="110.0" prefWidth="145.0" text="Пуск" GridPane.rowIndex="2">
                                        <font>
                                           <Font name="System Bold" size="15.0" />
                                        </font>
@@ -2738,22 +2731,22 @@
                               </GridPane>
                               <GridPane GridPane.columnIndex="5" GridPane.rowIndex="2">
                                  <children>
-                                    <Button fx:id="btnADKMSettings3" mnemonicParsing="false" prefHeight="0.0" prefWidth="218.0" text="Настройки">
+                                    <Button fx:id="btnADKMSettings1" mnemonicParsing="false" prefHeight="0.0" prefWidth="218.0" text="Настройки">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="btnADKMAdditionTsksReduct3" mnemonicParsing="false" prefHeight="0.0" prefWidth="218.0" text="Редактор доп.заданий" GridPane.rowIndex="1">
+                                    <Button fx:id="btnADKMAdditionTsksReduct1" mnemonicParsing="false" prefHeight="0.0" prefWidth="218.0" text="Редактор доп.заданий" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="btnADKMSignsSlotsReduct3" mnemonicParsing="false" prefHeight="9.0" prefWidth="218.0" text="Редактор набора знаков" GridPane.rowIndex="2">
+                                    <Button fx:id="btnADKMSignsSlotsReduct1" mnemonicParsing="false" prefHeight="9.0" prefWidth="218.0" text="Редактор набора знаков" GridPane.rowIndex="2">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="btnADKMSoundOff3" mnemonicParsing="false" prefHeight="4.0" prefWidth="218.0" text="Выключение звука" GridPane.rowIndex="3">
+                                    <Button fx:id="btnADKMSoundOff1" mnemonicParsing="false" prefHeight="4.0" prefWidth="218.0" text="Выключение звука" GridPane.rowIndex="3">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
@@ -2786,27 +2779,27 @@
                         </GridPane>
                         <GridPane layoutX="15.0" layoutY="159.0" pickOnBounds="false" prefHeight="45.0" prefWidth="685.0" AnchorPane.bottomAnchor="716.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="159.0">
                            <children>
-                              <Label fx:id="lblADKMTaskTextF3" pickOnBounds="false" prefHeight="28.0" prefWidth="201.0" text="Текст задания" textAlignment="CENTER">
+                              <Label fx:id="lblADKMTaskTextF1" pickOnBounds="false" prefHeight="28.0" prefWidth="201.0" text="Текст задания" textAlignment="CENTER">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="lblADKMInputTaskTextf3" pickOnBounds="false" prefHeight="68.0" prefWidth="242.0" text="Ввод текста задания" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                              <Label fx:id="lblADKMInputTaskTextf1" pickOnBounds="false" prefHeight="68.0" prefWidth="242.0" text="Ввод текста задания" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                  <font>
                                     <Font size="19.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="lblADKMVVVTextF3" pickOnBounds="false" prefHeight="28.0" prefWidth="200.0" text="VVV=" textAlignment="CENTER" GridPane.rowIndex="1">
+                              <Label fx:id="lblADKMVVVTextF1" pickOnBounds="false" prefHeight="28.0" prefWidth="200.0" text="VVV=" textAlignment="CENTER" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="System Bold" size="19.0" />
                                  </font>
                               </Label>
-                              <ToggleButton fx:id="tglBtnADKMShowHideTask3" mnemonicParsing="false" prefHeight="12.0" prefWidth="193.0" text="Скрыть текст задания" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                              <ToggleButton fx:id="tglBtnADKMShowHideTask1" mnemonicParsing="false" prefHeight="12.0" prefWidth="193.0" text="Скрыть текст задания" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="System Bold" size="15.0" />
                                  </font>
                               </ToggleButton>
-                              <ToggleButton fx:id="tglBtnADKMShowHideAnswer3" mnemonicParsing="false" prefHeight="7.0" prefWidth="121.0" text="Скрыть ввод" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                              <ToggleButton fx:id="tglBtnADKMShowHideAnswer1" mnemonicParsing="false" prefHeight="7.0" prefWidth="121.0" text="Скрыть ввод" GridPane.columnIndex="3" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="System Bold" size="15.0" />
                                  </font>
@@ -2897,67 +2890,67 @@
                               <GridPane gridLinesVisible="true" prefHeight="300.0" prefWidth="294.0" GridPane.rowIndex="1">
                                  <children>
                                     <TextField fx:id="txtFldADKMMnTsk00" GridPane.rowIndex="2" />
-                                    <TextField fx:id="txtFldADKMMnTsk213" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <TextField fx:id="txtFldADKMMnTsk211" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk223" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                    <TextField fx:id="txtFldADKMMnTsk221" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk233" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                    <TextField fx:id="txtFldADKMMnTsk231" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="2">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk243" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                    <TextField fx:id="txtFldADKMMnTsk241" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="2">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk303" editable="false" GridPane.rowIndex="3">
+                                    <TextField fx:id="txtFldADKMMnTsk301" editable="false" GridPane.rowIndex="3">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk313" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                    <TextField fx:id="txtFldADKMMnTsk311" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk323" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                    <TextField fx:id="txtFldADKMMnTsk321" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk333" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                    <TextField fx:id="txtFldADKMMnTsk331" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk343" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                    <TextField fx:id="txtFldADKMMnTsk341" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="3">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk403" editable="false" GridPane.rowIndex="4">
+                                    <TextField fx:id="txtFldADKMMnTsk401" editable="false" GridPane.rowIndex="4">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk413" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                    <TextField fx:id="txtFldADKMMnTsk411" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk423" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                    <TextField fx:id="txtFldADKMMnTsk421" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="4">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk433" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                    <TextField fx:id="txtFldADKMMnTsk431" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="4">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
@@ -2967,182 +2960,182 @@
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk503" editable="false" GridPane.rowIndex="5">
+                                    <TextField fx:id="txtFldADKMMnTsk501" editable="false" GridPane.rowIndex="5">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk513" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                    <TextField fx:id="txtFldADKMMnTsk511" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="5">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk523" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                    <TextField fx:id="txtFldADKMMnTsk521" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="5">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk533" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                    <TextField fx:id="txtFldADKMMnTsk531" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="5">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk543" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                    <TextField fx:id="txtFldADKMMnTsk541" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="5">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk603" editable="false" GridPane.rowIndex="6">
+                                    <TextField fx:id="txtFldADKMMnTsk601" editable="false" GridPane.rowIndex="6">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk613" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                    <TextField fx:id="txtFldADKMMnTsk611" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="6">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk623" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                    <TextField fx:id="txtFldADKMMnTsk621" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="6">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk633" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                                    <TextField fx:id="txtFldADKMMnTsk631" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="6">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk643" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                                    <TextField fx:id="txtFldADKMMnTsk641" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="6">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk703" editable="false" GridPane.rowIndex="7">
+                                    <TextField fx:id="txtFldADKMMnTsk701" editable="false" GridPane.rowIndex="7">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk713" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                    <TextField fx:id="txtFldADKMMnTsk711" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="7">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk723" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                    <TextField fx:id="txtFldADKMMnTsk721" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="7">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk733" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                                    <TextField fx:id="txtFldADKMMnTsk731" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="7">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk743" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                                    <TextField fx:id="txtFldADKMMnTsk741" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="7">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk803" editable="false" GridPane.rowIndex="8">
+                                    <TextField fx:id="txtFldADKMMnTsk801" editable="false" GridPane.rowIndex="8">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk813" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                    <TextField fx:id="txtFldADKMMnTsk811" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="8">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk823" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                    <TextField fx:id="txtFldADKMMnTsk821" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="8">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk833" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                                    <TextField fx:id="txtFldADKMMnTsk831" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="8">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk843" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                                    <TextField fx:id="txtFldADKMMnTsk841" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="8">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk903" editable="false" GridPane.rowIndex="9">
+                                    <TextField fx:id="txtFldADKMMnTsk901" editable="false" GridPane.rowIndex="9">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk913" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                    <TextField fx:id="txtFldADKMMnTsk911" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="9">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk923" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                                    <TextField fx:id="txtFldADKMMnTsk921" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="9">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk933" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                                    <TextField fx:id="txtFldADKMMnTsk931" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="9">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk443" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="9">
+                                    <TextField fx:id="txtFldADKMMnTsk441" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="9">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk003" editable="false">
+                                    <TextField fx:id="txtFldADKMMnTsk001" editable="false">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk013" editable="false" GridPane.columnIndex="1">
+                                    <TextField fx:id="txtFldADKMMnTsk011" editable="false" GridPane.columnIndex="1">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk023" editable="false" GridPane.columnIndex="2">
+                                    <TextField fx:id="txtFldADKMMnTsk021" editable="false" GridPane.columnIndex="2">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk033" editable="false" GridPane.columnIndex="3">
+                                    <TextField fx:id="txtFldADKMMnTsk031" editable="false" GridPane.columnIndex="3">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk043" editable="false" GridPane.columnIndex="4">
+                                    <TextField fx:id="txtFldADKMMnTsk041" editable="false" GridPane.columnIndex="4">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk103" editable="false" GridPane.rowIndex="1">
+                                    <TextField fx:id="txtFldADKMMnTsk101" editable="false" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk113" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <TextField fx:id="txtFldADKMMnTsk111" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk123" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                    <TextField fx:id="txtFldADKMMnTsk121" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk133" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                    <TextField fx:id="txtFldADKMMnTsk131" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk143" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                    <TextField fx:id="txtFldADKMMnTsk141" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
                                     </TextField>
-                                    <TextField fx:id="txtFldADKMMnTsk203" editable="false" GridPane.rowIndex="2">
+                                    <TextField fx:id="txtFldADKMMnTsk201" editable="false" GridPane.rowIndex="2">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
@@ -3168,7 +3161,7 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                               </GridPane>
-                              <TextArea fx:id="txtAreaADKMInput3" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <TextArea fx:id="txtAreaADKMInput1" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                            </children>
                            <columnConstraints>
                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="337.0" minWidth="10.0" prefWidth="320.0" />
@@ -3182,17 +3175,17 @@
                         </GridPane>
                         <GridPane gridLinesVisible="true" layoutX="11.0" layoutY="472.0" prefHeight="30.0" prefWidth="689.0">
                            <children>
-                              <Button fx:id="btnADKMClearInput3" mnemonicParsing="false" prefHeight="31.0" prefWidth="106.0" text="Очистить" GridPane.columnIndex="1">
+                              <Button fx:id="btnADKMClearInput1" mnemonicParsing="false" prefHeight="31.0" prefWidth="106.0" text="Очистить" GridPane.columnIndex="1">
                                  <font>
                                     <Font name="System Bold" size="15.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="btnADKMTestInput3" mnemonicParsing="false" prefHeight="31.0" prefWidth="122.0" text="Проверить" GridPane.columnIndex="2">
+                              <Button fx:id="btnADKMTestInput1" mnemonicParsing="false" prefHeight="31.0" prefWidth="122.0" text="Проверить" GridPane.columnIndex="2">
                                  <font>
                                     <Font name="System Bold" size="15.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="btnADKMReductInput3" mnemonicParsing="false" prefHeight="31.0" prefWidth="146.0" text="Редактировать" GridPane.columnIndex="3">
+                              <Button fx:id="btnADKMReductInput1" mnemonicParsing="false" prefHeight="31.0" prefWidth="146.0" text="Редактировать" GridPane.columnIndex="3">
                                  <font>
                                     <Font name="System Bold" size="15.0" />
                                  </font>
@@ -3215,7 +3208,7 @@
                         </GridPane>
                         <GridPane gridLinesVisible="true" layoutX="11.0" layoutY="503.0" prefHeight="55.0" prefWidth="336.0">
                            <children>
-                              <Button fx:id="btnADKMTheMain3" mnemonicParsing="false" prefHeight="29.0" prefWidth="177.0" text="Основное" GridPane.columnIndex="1">
+                              <Button fx:id="btnADKMTheMain1" mnemonicParsing="false" prefHeight="29.0" prefWidth="177.0" text="Основное" GridPane.columnIndex="1">
                                  <font>
                                     <Font name="System Bold" size="13.0" />
                                  </font>
@@ -3247,7 +3240,7 @@
                                     <Font name="System Bold" size="15.0" />
                                  </font>
                               </TextField>
-                              <TextArea fx:id="txtAreaADKMInputErrors3" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                              <TextArea fx:id="txtAreaADKMInputErrors1" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
                            </children>
                            <columnConstraints>
                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -3259,12 +3252,12 @@
                         </GridPane>
                         <GridPane gridLinesVisible="true" layoutX="353.0" layoutY="661.0" prefHeight="56.0" prefWidth="349.0">
                            <children>
-                              <Button fx:id="btnADKMTimeSigns3" mnemonicParsing="false" prefHeight="35.0" prefWidth="208.0" text="Время-знаки">
+                              <Button fx:id="btnADKMTimeSigns1" mnemonicParsing="false" prefHeight="35.0" prefWidth="208.0" text="Время-знаки">
                                  <font>
                                     <Font name="System Bold" size="13.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="btnADKMSignsCorrection3" mnemonicParsing="false" prefHeight="47.0" prefWidth="538.0" text="Корректировать знаки" GridPane.columnIndex="1">
+                              <Button fx:id="btnADKMSignsCorrection1" mnemonicParsing="false" prefHeight="47.0" prefWidth="538.0" text="Корректировать знаки" GridPane.columnIndex="1">
                                  <font>
                                     <Font name="System Bold" size="13.0" />
                                  </font>
@@ -3275,7 +3268,7 @@
                                     <Font name="System Bold" size="13.0" />
                                  </font>
                               </TextField>
-                              <MenuButton fx:id="mnBtnTskFormer3" mnemonicParsing="false" prefHeight="148.0" prefWidth="501.0" text="Знаки" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                              <MenuButton fx:id="mnBtnTskFormer1" mnemonicParsing="false" prefHeight="148.0" prefWidth="501.0" text="Знаки" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="System Bold" size="13.0" />
                                  </font>
@@ -3300,22 +3293,22 @@
                      <children>
                         <GridPane gridLinesVisible="true" layoutX="14.0" layoutY="35.0" prefHeight="120.0" prefWidth="606.0">
                            <children>
-                              <ToggleButton fx:id="btnADKMRightOnOff3" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ВКЛ.">
+                              <ToggleButton fx:id="btnADKMRightOnOff1" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ВКЛ.">
                                  <font>
                                     <Font size="13.0" />
                                  </font>
                               </ToggleButton>
-                              <ToggleButton fx:id="btnADKMRightTangent3" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ТАНГЕНТА" GridPane.rowIndex="1">
+                              <ToggleButton fx:id="btnADKMRightTangent1" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ТАНГЕНТА" GridPane.rowIndex="1">
                                  <font>
                                     <Font size="13.0" />
                                  </font>
                               </ToggleButton>
-                              <ToggleButton fx:id="btnADKMRightReciev3" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ПРИЕМ" GridPane.rowIndex="2">
+                              <ToggleButton fx:id="btnADKMRightReciev1" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ПРИЕМ" GridPane.rowIndex="2">
                                  <font>
                                     <Font size="13.0" />
                                  </font>
                               </ToggleButton>
-                              <ToggleButton fx:id="btnADKMRightCall3" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ВЫЗОВ" GridPane.rowIndex="3">
+                              <ToggleButton fx:id="btnADKMRightCall1" mnemonicParsing="false" prefHeight="29.0" prefWidth="225.0" text="ВЫЗОВ" GridPane.rowIndex="3">
                                  <font>
                                     <Font size="13.0" />
                                  </font>
@@ -3495,6 +3488,15 @@
                         <TextField editable="false" layoutX="522.0" layoutY="755.0" prefHeight="63.0" prefWidth="100.0" promptText="ИНФОРМАЦИЯ" />
                      </children>
                   </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab fx:id="tb5Settings" closable="false" text="Настройки">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox layoutX="1086.0" prefHeight="879.0" prefWidth="204.0" />
                </children>
             </AnchorPane>
          </content>
