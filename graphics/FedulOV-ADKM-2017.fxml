@@ -16,14 +16,14 @@
                   <VBox layoutX="1087.0" layoutY="2.0" prefHeight="879.0" prefWidth="204.0" />
                   <AnchorPane layoutX="4.0" layoutY="6.0" prefHeight="920.0" prefWidth="709.0">
                      <children>
-                        <GridPane fx:id="grdMainTask" gridLinesVisible="true" layoutX="16.0" layoutY="14.0" maxHeight="175.0" maxWidth="682.0" minHeight="138.0" minWidth="409.0" pickOnBounds="false" prefHeight="138.0" prefWidth="682.0" AnchorPane.bottomAnchor="768.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="14.0">
+                        <GridPane fx:id="grdMainTask" gridLinesVisible="true" layoutX="16.0" layoutY="-2.0" maxHeight="175.0" maxWidth="682.0" minHeight="138.0" minWidth="409.0" pickOnBounds="false" prefHeight="140.0" prefWidth="682.0" AnchorPane.bottomAnchor="782.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="-2.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="10.0" prefWidth="137.0" />
                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="3.0" prefWidth="7.0" />
                             <ColumnConstraints hgrow="SOMETIMES" maxWidth="284.0" minWidth="10.0" prefWidth="152.0" />
                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="284.0" minWidth="0.0" prefWidth="6.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="10.0" prefWidth="141.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="10.0" prefWidth="214.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="10.0" prefWidth="173.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="10.0" prefWidth="190.0" />
                           </columnConstraints>
                           <rowConstraints>
                             <RowConstraints />
@@ -31,17 +31,7 @@
                             <RowConstraints maxHeight="178.0" minHeight="0.0" prefHeight="139.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Label prefHeight="21.0" prefWidth="168.0" text=" Основное задание" textAlignment="CENTER" textFill="#9e3a3a" underline="true" GridPane.rowIndex="1">
-                                 <font>
-                                    <Font name="System Bold" size="15.0" />
-                                 </font>
-                              </Label>
-                              <Label prefHeight="17.0" prefWidth="158.0" text="  Скорость (зн/ мин.)" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
-                                 <font>
-                                    <Font name="System Bold" size="15.0" />
-                                 </font>
-                              </Label>
-                              <Label text="  Список наборов" underline="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                              <Label underline="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="System Bold" size="15.0" />
                                  </font>
@@ -106,32 +96,6 @@
                                     <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                               </GridPane>
-                              <GridPane GridPane.columnIndex="4" GridPane.rowIndex="2">
-                                <columnConstraints>
-                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                </columnConstraints>
-                                <rowConstraints>
-                                  <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
-                                  <RowConstraints maxHeight="40.0" minHeight="5.0" prefHeight="7.0" vgrow="SOMETIMES" />
-                                  <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="87.0" vgrow="SOMETIMES" />
-                                </rowConstraints>
-                                 <children>
-                                    <MenuButton fx:id="mnBtnADKMLangChooser" mnemonicParsing="false" prefHeight="67.0" prefWidth="145.0" text="Выбор языка">
-                                      <items>
-                                        <MenuItem mnemonicParsing="false" text="Action 1" />
-                                        <MenuItem mnemonicParsing="false" text="Action 2" />
-                                      </items>
-                                       <font>
-                                          <Font name="System Bold" size="13.0" />
-                                       </font>
-                                    </MenuButton>
-                                    <ToggleButton mnemonicParsing="false" prefHeight="198.0" prefWidth="357.0" text="ПУСК" GridPane.rowIndex="2">
-                                       <font>
-                                          <Font name="System Bold" size="13.0" />
-                                       </font>
-                                    </ToggleButton>
-                                 </children>
-                              </GridPane>
                               <GridPane GridPane.columnIndex="5" GridPane.rowIndex="2">
                                 <columnConstraints>
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -159,6 +123,48 @@
                                        </font>
                                     </Button>
                                     <Button fx:id="btnADKMSoundOff" mnemonicParsing="false" prefHeight="4.0" prefWidth="218.0" text="Выключение звука" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </GridPane>
+                              <TextField alignment="CENTER" editable="false" text="Скорость (зн/мин)" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </TextField>
+                              <TextField alignment="CENTER" editable="false" text="Основное задание" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </TextField>
+                              <TextField alignment="CENTER" editable="false" text="Список наборов" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </TextField>
+                              <GridPane gridLinesVisible="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <MenuButton mnemonicParsing="false" prefHeight="38.0" prefWidth="176.0" text="ЛАТИНСКИЙ">
+                                      <items>
+                                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                                      </items>
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </MenuButton>
+                                    <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="176.0" text="ПУСК" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
@@ -586,7 +592,7 @@
                               </Label>
                            </children>
                         </GridPane>
-                        <GridPane gridLinesVisible="true" layoutX="11.0" layoutY="503.0" prefHeight="155.0" prefWidth="343.0">
+                        <GridPane gridLinesVisible="true" layoutX="11.0" layoutY="503.0" prefHeight="155.0" prefWidth="341.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -613,9 +619,14 @@
                                     <Font name="System Bold" size="13.0" />
                                  </font>
                               </ToggleButton>
+                              <Button mnemonicParsing="false" prefHeight="76.0" prefWidth="170.0" text="ЗАГРУЗИТЬ" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
                            </children>
                         </GridPane>
-                        <GridPane gridLinesVisible="true" layoutX="355.0" layoutY="504.0" prefHeight="154.0" prefWidth="346.0">
+                        <GridPane gridLinesVisible="true" layoutX="354.0" layoutY="504.0" prefHeight="154.0" prefWidth="347.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                           </columnConstraints>
